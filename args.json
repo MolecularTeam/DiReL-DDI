@@ -1,0 +1,241 @@
+{
+    "dataset_name": "miner_s1_0",
+    "cuda_num": 0,
+
+    "params": {
+        "lr": 7e-4,
+        "weight_decay": 1e-4,
+        "n_epochs": 150,
+        "batch_size": 1024,
+        "rank": 8,
+        "neg_samples": 1,
+        "data_size_ratio": 1,
+        "use_cuda": true,
+        "T_max": 150
+    },
+
+    "datasets": {
+    "miner": "miner_s1_0, miner_s1_1, miner_s1_2, miner_s2_0, miner_s2_1, miner_s2_2",
+    "ddinter": "ddinter_s1_0, ddinter_s1_1, ddinter_s1_2, ddinter_s1_3, ddinter_s1_4, ddinter_s2_0, ddinter_s2_1, ddinter_s2_2, ddinter_s2_3, ddinter_s2_4",
+    "drugbank": "drugbank_s1_0, drugbank_s1_1, drugbank_s1_2, drugbank_s2_0, drugbank_s2_1, drugbank_s2_2"
+    },
+
+
+    "miner_s1_0": {
+        "induc_ddi_train": "./dataset/miner/fold0/train.csv",
+        "induc_s1": "./dataset/miner/fold0/test_S1.csv",
+        "induc_s2": "./dataset/miner/fold0/test_S2.csv",
+
+        "drugs_smiles": "./dataset/miner/drug_list_miner.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold0_s1_miner.pkl"
+    },
+
+    "miner_s1_1": {
+        "induc_ddi_train": "./dataset/miner/fold1/train.csv",
+        "induc_s1": "./dataset/miner/fold1/test_S1.csv",
+        "induc_s2": "./dataset/miner/fold1/test_S2.csv",
+
+        "drugs_smiles": "./dataset/miner/drug_list_miner.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold1_s1_miner.pkl"
+    },
+
+    "miner_s1_2": {
+        "induc_ddi_train": "./dataset/miner/fold2/train.csv",
+        "induc_s1": "./dataset/miner/fold2/test_S1.csv",
+        "induc_s2": "./dataset/miner/fold2/test_S2.csv",
+
+        "drugs_smiles": "./dataset/miner/drug_list_miner.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold2_s1_miner.pkl"
+    },
+
+    "miner_s2_0": {
+        "induc_ddi_train": "./dataset/miner/fold0/train.csv",
+        "induc_s1": "./dataset/miner/fold0/test_S1.csv",
+        "induc_s2": "./dataset/miner/fold0/test_S2.csv",
+
+        "drugs_smiles": "./dataset/miner/drug_list_miner.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold0_s2_miner.pkl"
+    },
+
+    "miner_s2_1": {
+        "induc_ddi_train": "./dataset/miner/fold1/train.csv",
+        "induc_s1": "./dataset/miner/fold1/test_S1.csv",
+        "induc_s2": "./dataset/miner/fold1/test_S2.csv",
+
+        "drugs_smiles": "./dataset/miner/drug_list_miner.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold1_s2_miner.pkl"
+    },
+
+    "miner_s2_2": {
+        "induc_ddi_train": "./dataset/miner/fold2/train.csv",
+        "induc_s1": "./dataset/miner/fold2/test_S1.csv",
+        "induc_s2": "./dataset/miner/fold2/test_S2.csv",
+
+        "drugs_smiles": "./dataset/miner/drug_list_miner.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold2_s2_miner.pkl"
+    },
+
+
+    "ddinter_s1_0": {
+        "induc_ddi_train": "./dataset/ddinter/fold0/train.csv",
+        "induc_s1": "./dataset/ddinter/fold0/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold0/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold0_s1_ddinter.pkl"
+    },
+
+    "ddinter_s1_1": {
+        "induc_ddi_train": "./dataset/ddinter/fold1/train.csv",
+        "induc_s1": "./dataset/ddinter/fold1/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold1/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold1_s1_ddinter.pkl"
+    },
+
+    "ddinter_s1_2": {
+        "induc_ddi_train": "./dataset/ddinter/fold2/train.csv",
+        "induc_s1": "./dataset/ddinter/fold2/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold2/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold2_s1_ddinter.pkl"
+    },
+
+    "ddinter_s1_3": {
+        "induc_ddi_train": "./dataset/ddinter/fold3/train.csv",
+        "induc_s1": "./dataset/ddinter/fold3/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold3/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold3_s1_ddinter.pkl"
+    },
+
+    "ddinter_s1_4": {
+        "induc_ddi_train": "./dataset/ddinter/fold4/train.csv",
+        "induc_s1": "./dataset/ddinter/fold4/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold4/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold4_s1_ddinter.pkl"
+    },
+
+    "ddinter_s2_0": {
+        "induc_ddi_train": "./dataset/ddinter/fold0/train.csv",
+        "induc_s1": "./dataset/ddinter/fold0/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold0/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold0_s2_ddinter.pkl"
+    },
+
+    "ddinter_s2_1": {
+        "induc_ddi_train": "./dataset/ddinter/fold1/train.csv",
+        "induc_s1": "./dataset/ddinter/fold1/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold1/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold1_s2_ddinter.pkl"
+    },
+
+    "ddinter_s2_2": {
+        "induc_ddi_train": "./dataset/ddinter/fold2/train.csv",
+        "induc_s1": "./dataset/ddinter/fold2/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold2/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold2_s2_ddinter.pkl"
+    },
+
+    "ddinter_s2_3": {
+        "induc_ddi_train": "./dataset/ddinter/fold3/train.csv",
+        "induc_s1": "./dataset/ddinter/fold3/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold3/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold3_s2_ddinter.pkl"
+    },
+
+    "ddinter_s2_4": {
+        "induc_ddi_train": "./dataset/ddinter/fold4/train.csv",
+        "induc_s1": "./dataset/ddinter/fold4/s1.csv",
+        "induc_s2": "./dataset/ddinter/fold4/s2.csv",
+        "drugs_smiles": "./dataset/ddinter/ddinter_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold4_s2_ddinter.pkl"
+    },
+
+
+    "drugbank_s1_0": {
+        "induc_ddi_train": "./dataset/drugbank/fold0/train.csv",
+        "induc_s1": "./dataset/drugbank/fold0/s1.csv",
+        "induc_s2": "./dataset/drugbank/fold0/s2.csv",
+
+        "ddis": "./dataset/drugbank/ddis.csv",
+        "drugs_smiles": "./dataset/drugbank/drug_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold0_s1_drugbank.pkl"
+    },
+
+    "drugbank_s1_1": {
+        "induc_ddi_train": "./dataset/drugbank/fold1/train.csv",
+        "induc_s1": "./dataset/drugbank/fold1/s1.csv",
+        "induc_s2": "./dataset/drugbank/fold1/s2.csv",
+
+        "ddis": "./dataset/drugbank/ddis.csv",
+        "drugs_smiles": "./dataset/drugbank/drug_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold1_s1_drugbank.pkl"
+    },
+
+    "drugbank_s1_2": {
+        "induc_ddi_train": "./dataset/drugbank/fold2/train.csv",
+        "induc_s1": "./dataset/drugbank/fold2/s1.csv",
+        "induc_s2": "./dataset/drugbank/fold2/s2.csv",
+
+        "ddis": "./dataset/drugbank/ddis.csv",
+        "drugs_smiles": "./dataset/drugbank/drug_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold2_s1_drugbank.pkl"
+    },
+
+    "drugbank_s2_0": {
+        "induc_ddi_train": "./dataset/drugbank/fold0/train.csv",
+        "induc_s1": "./dataset/drugbank/fold0/s1.csv",
+        "induc_s2": "./dataset/drugbank/fold0/s2.csv",
+
+        "ddis": "./dataset/drugbank/ddis.csv",
+        "drugs_smiles": "./dataset/drugbank/drug_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold0_s2_drugbank.pkl"
+    },
+
+    "drugbank_s2_1": {
+        "induc_ddi_train": "./dataset/drugbank/fold1/train.csv",
+        "induc_s1": "./dataset/drugbank/fold1/s1.csv",
+        "induc_s2": "./dataset/drugbank/fold1/s2.csv",
+
+        "ddis": "./dataset/drugbank/ddis.csv",
+        "drugs_smiles": "./dataset/drugbank/drug_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold1_s2_drugbank.pkl"
+    },
+
+    "drugbank_s2_2": {
+        "induc_ddi_train": "./dataset/drugbank/fold2/train.csv",
+        "induc_s1": "./dataset/drugbank/fold2/s1.csv",
+        "induc_s2": "./dataset/drugbank/fold2/s2.csv",
+
+        "ddis": "./dataset/drugbank/ddis.csv",
+        "drugs_smiles": "./dataset/drugbank/drug_smiles.csv",
+
+        "inductive_pkl_dir": "./pkl/induc_fold2_s2_drugbank.pkl"
+    }
+}
